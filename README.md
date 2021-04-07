@@ -52,4 +52,4 @@ With our model, we are now able to get real time hand keypoint position to predi
 
 We also had a left hand keypoint detection. With this detection, we are able to know to position of the left hand finger tip. We defined areas in our image, and when the finger is in this area for more than 10 frame, it add a space, or suppress a letter, function of the area it is in.
 
-<img src="./pictures/hand2.png" alt="drawing" width="200"/>
+![keypoint](pictures/hand2.png)
