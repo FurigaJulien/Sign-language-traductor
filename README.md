@@ -37,7 +37,8 @@ while cap.isOpened():
 
 The next idea was to use [Google's Mediapipe](https://github.com/google/mediapipe) to get the relative hand position. With this package, we were able to get 21 keypoints position for the right hand.
 
-![keypoint](pictures/hand.png)
+<img src="pictures/hand.png" alt="Kitten"
+	title="A cute kitten" width="150" height="100" />
 
 
 Once the keypoints position recuperation done, we just had to walk througt our previously created picture to get all the hand position for every letter. All those position are stored in the [labelleled position csv](https://github.com/FurigaJulien/sign_detection_classification/blob/main/labellised_data.csv)
