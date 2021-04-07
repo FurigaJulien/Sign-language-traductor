@@ -44,4 +44,10 @@ Once the keypoints position recuperation done, we just had to walk througt our p
 
 ## Classification
 
+To do the classification, we used a fully connected network with 4 dense layers. Although the accuracy was only 60%, it is enought to have good result after. In fact some sign are really similar and it was predictible that we had such results.
 
+## Detection and writing
+
+With our model, we are now able to get real time hand keypoint position to predict what sign the hand is doing. To have something usable, we decided to store every detection and display a letter when it is detected in 15 frames. 
+
+We also had a left hand keypoint detection. With this detection, we are able to know to position of the left hand finger tip. We defined areas in our image, and when the finger is in this area for more than 10 frame, it add a space, or suppress a letter, function of the area it is in.
