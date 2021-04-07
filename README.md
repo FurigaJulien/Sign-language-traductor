@@ -37,8 +37,7 @@ while cap.isOpened():
 
 The next idea was to use [Google's Mediapipe](https://github.com/google/mediapipe) to get the relative hand position. With this package, we were able to get 21 keypoints position for the right hand.
 
-<img src="pictures/hand.png" alt="Kitten"
-	title="A cute kitten" width="150" height="100" />
+![keypoint](pictures/hand.png)
 
 
 Once the keypoints position recuperation done, we just had to walk througt our previously created picture to get all the hand position for every letter. All those position are stored in the [labelleled position csv](https://github.com/FurigaJulien/sign_detection_classification/blob/main/labellised_data.csv)
@@ -53,4 +52,4 @@ With our model, we are now able to get real time hand keypoint position to predi
 
 We also had a left hand keypoint detection. With this detection, we are able to know to position of the left hand finger tip. We defined areas in our image, and when the finger is in this area for more than 10 frame, it add a space, or suppress a letter, function of the area it is in.
 
-![keypoint](pictures/hand2.png =250x)
+![keypoint](pictures/hand2.png)
